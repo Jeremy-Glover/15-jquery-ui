@@ -14,6 +14,6 @@ var stylePaths = [
 
 var Sass = require('broccoli-sass');
 
-var styles = new Sass(stylePaths, 'keyboard.css' 'accordion.scss', 'app.css');
+var styles = new Sass(stylePaths, 'app.scss', 'app.css');
 
 module.exports = new Merge(['public', styles, jquery], { overwrite: true });
