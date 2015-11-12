@@ -1,6 +1,39 @@
+$border_gray: rgb(49, 51, 52);
+
 html {
    box-sizing: border-box;
  }
  *, *:before, *:after {
    box-sizing: inherit;
  }
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  margin: auto;
+  padding-left: 0;
+  list-style: none;
+  font-family: sans-serif;
+  border: 3px $border_gray solid;
+  background: $border_gray;
+  color: rgb(244, 247, 247);
+}
+
+.accordion__list {
+  display: none;
+
+}
+
+.accordion__drop-down {
+
+}
+
+.accordion__item--header {
+  display: flex;
+  margin: 0;
+  height: 40px;
+  background-image:
+    linear-gradient(
+      $border_gray, rgb(61, 69, 71));
+}
