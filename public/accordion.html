@@ -5,42 +5,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Project Title</title>
-  <link rel="stylesheet" href="app.css">
+  <title>Accordion</title>
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/app.css">
 </head>
 <body>
   <ul class="accordion">
-    <li class="accordion__drop-down">
-    <span class='title-bar'><i></i><p></p><p></p></span>
-    <ul class='drop-down__title'>
-      <li>Dropbox</li>
-      <li>Skydrive</li>
-      <li>FTP Server</li>
-      <li>Dropbox</li>
-      <li>Skydrive</li>
+    <li class='accordion__drop-down'>
+    <h2 class='accordion__item accordion__item--header'><i class='fa fa-inbox'></i>My Files<span class='bar-num'>495</span></h2>
+    <ul>
+      <li class="accordion__item"><span class="item-left">01</span>Dropbox<span class="item-right">42</span></li>
+      <li class="accordion__item"><span class="item-left">02</span>Skydive<span class="item-right">87</span></li>
+      <li class="accordion__item"><span class="item-left">03</span>FTP Server<span class="item-right">366</span></li>
+      <li class="accordion__item"><span class="item-left">04</span>Dropbox<span class="item-right">1</span></li>
+      <li class="accordion__item"><span class="item-left">05</span>Skydive<span class="item-right">10</span></li>
     </ul>
   </li>
-  <li class="accordion__drop-down">
+  <li class='accordion__drop-down'>
+    <h2 class='accordion__item accordion__item--header'><i class='fa fa-inbox'></i>Mail<span class='bar-num'>26</span></h2>
     <ul>
-      <li>Dropbox</li>
-      <li>Skydrive</li>
-      <li>FTP Server</li>
-      <li>Dropbox</li>
-      <li>Skydrive</li>
+      <li class="accordion__item"><span class="item-left">01</span>Dropbox<span class="item-right">13</span></li>
+      <li class="accordion__item"><span class="item-left">02</span>FTP Server<span class="item-right">23</span></li>
+      <li class="accordion__item"><span class="item-left">03</span>Dropbox<span class="item-right">33</span></li>
+      <li class="accordion__item"><span class="item-left">04</span>Skydrive<span class="item-right">43</span></li>
     </ul>
   </li>
-  <li class="accordion__drop-down">
+  <li class='accordion__drop-down'>
+    <h2 class='accordion__item accordion__item--header'><i class='fa fa-cloud-upload'></i>Cloud<span class='bar-num'>58</span></h2>
     <ul>
-      <li>Dropbox</li>
-      <li>Skydrive</li>
-      <li>FTP Server</li>
-      <li>Dropbox</li>
-      <li>Skydrive</li>
+      <li class="accordion__item"><span class="item-left">01</span>Connect<span class="item-right">12</span></li>
+      <li class="accordion__item"><span class="item-left">02</span>Profiles<span class="item-right">19</span></li>
+      <li class="accordion__item"><span class="item-left">03</span>Options<span class="item-right">27</span></li>
+      <li class="accordion__item"><span class="item-left">04</span>Connect<span class="item-right">12</span></li>
+      <li class="accordion__item"><span class="item-left">05</span>Profile<span class="item-right">27</span></li>
     </ul>
   </li>
-  <li class="accordion__drop-down">
-    <ul>
-    </ul>
+  <li class='accordion__drop-down'>
+    <h2 class='accordion__item accordion__item--signout'><i class='fa fa-plug'></i>Sign Out</h2>
   </li>
 </ul>
 </body>
