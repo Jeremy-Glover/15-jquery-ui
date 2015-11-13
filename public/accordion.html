@@ -6,46 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Accordion</title>
-  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="/app.css">
 </head>
   <body>
       <ul class="accordion">
         <li class='accordion__drop--down'>
-        <h2 class='accordion__item accordion__item--header'><i class='fa fa-inbox'></i>My Files<span class='bar-num'>495</span></h2>
+        <h2 class='accordion__item accordion__item--header'><i class='fa fa-inbox'></i><p class="item-info">My Files</p><span class='item-num'>495</span></h2>
         <ul class='accordion__list'>
-          <li class="accordion__item"><span class="item-left">01</span>Dropbox<span class="item-right">42</span></li>
-          <li class="accordion__item"><span class="item-left">02</span>Skydive<span class="item-right">87</span></li>
-          <li class="accordion__item"><span class="item-left">03</span>FTP Server<span class="item-right">366</span></li>
-          <li class="accordion__item"><span class="item-left">04</span>Dropbox<span class="item-right">1</span></li>
-          <li class="accordion__item"><span class="item-left">05</span>Skydive<span class="item-right">10</span></li>
+          <li class="accordion__item"><span class="item-left">01</span><p class="item-info">Dropbox</p><span class='item-right'>42</span></li>
+          <li class="accordion__item"><span class="item-left">02</span><p class="item-info">Skydive</p><span class="item-right">87</span></li>
+          <li class="accordion__item"><span class="item-left">03</span><p class="item-info">FTP Server</p><span class="item-right">366</span></li>
+          <li class="accordion__item"><span class="item-left">04</span><p class="item-info">Dropbox</p><span class="item-right">1</span></li>
+          <li class="accordion__item"><span class="item-left">05</span><p class="item-info">Skydive</p><span class="item-right">10</span></li>
         </ul>
       </li>
       <li class='accordion__drop--down'>
-        <h2 class='accordion__item accordion__item--header'><i class='fa fa-inbox'></i>Mail<span class='bar-num'>26</span></h2>
+        <h2 class='accordion__item accordion__item--header'><i class="fa fa-envelope"></i><p class="item-info">Mail</p><span class='item-num'>26</span></h2>
         <ul class='accordion__list'>
-          <li class="accordion__item"><span class="item-left">01</span>Dropbox<span class="item-right">13</span></li>
-          <li class="accordion__item"><span class="item-left">02</span>FTP Server<span class="item-right">23</span></li>
-          <li class="accordion__item"><span class="item-left">03</span>Dropbox<span class="item-right">33</span></li>
-          <li class="accordion__item"><span class="item-left">04</span>Skydrive<span class="item-right">43</span></li>
+          <li class="accordion__item"><span class="item-left">01</span><p class="item-info">Dropbox</p><span class="item-right">13</span></li>
+          <li class="accordion__item"><span class="item-left">02</span><p class="item-info">FTP Server</p><span class="item-right">23</span></li>
+          <li class="accordion__item"><span class="item-left">03</span><p class="item-info">Dropbox</p><span class="item-right">33</span></li>
+          <li class="accordion__item"><span class="item-left">04</span><p class="item-info">Skydrive</p><span class="item-right">43</span></li>
         </ul>
       </li>
       <li class='accordion__drop--down'>
-        <h2 class='accordion__item accordion__item--header'><i class='fa fa-cloud-upload'></i>Cloud<span class='bar-num'>58</span></h2>
+        <h2 class='accordion__item accordion__item--header'><i class='fa fa-cloud-upload'></i><p class="item-info">Cloud</p><span class='item-num'>58</span></h2>
         <ul class='accordion__list'>
-          <li class="accordion__item"><span class="item-left">01</span>Connect<span class="item-right">12</span></li>
-          <li class="accordion__item"><span class="item-left">02</span>Profiles<span class="item-right">19</span></li>
-          <li class="accordion__item"><span class="item-left">03</span>Options<span class="item-right">27</span></li>
-          <li class="accordion__item"><span class="item-left">04</span>Connect<span class="item-right">12</span></li>
-          <li class="accordion__item"><span class="item-left">05</span>Profile<span class="item-right">27</span></li>
+          <li class="accordion__item"><span class="item-left">01</span><p class="item-info">Connect</p><span class="item-right">12</span></li>
+          <li class="accordion__item"><span class="item-left">02</span><p class="item info">Profiles</p><span class="item-right">19</span></li>
+          <li class="accordion__item"><span class="item-left">03</span><p class="item-info">Options</p><span class="item-right">27</span></li>
+          <li class="accordion__item"><span class="item-left">04</span><p class="item-info">Connect</p><span class="item-right">12</span></li>
+          <li class="accordion__item"><span class="item-left">05</span><p class="item-info">Profile</p><span class="item-right">27</span></li>
         </ul>
       </li>
       <li class='accordion__drop--down'>
-        <h2 class='accordion__item accordion__item--header'><i class='fa fa-plug'></i>Sign Out</h2>
+        <h2 class='accordion__item accordion__item--header'><i class='fa fa-plug'></i><p class="item-info">Sign Out</p></h2>
       </li>
     </ul>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.js"></script>
-    <script src="app.js"></script>
+    <script src="/app.js"></script>
     <script>
       require(['accordion'], function(accordion) {
         accordion();
