@@ -4,3 +4,64 @@ html {
  *, *:before, *:after {
    box-sizing: inherit;
  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: auto;
+  list-style: none;
+  font-weight: bold;
+  background: rgb(199, 204, 207);
+}
+
+#enter {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid #f9f9f9;
+}
+
+.keys {
+  display: flex;
+  list-style: none;
+  width: 98%;
+  margin: auto;
+  padding-left: 0;
+}
+
+.keys li {
+  line-height: 60px;
+  text-align: center;
+  margin: 0 5px 5px 0;
+  border-radius: 8%;
+  background: rgb(254, 255, 255);
+  border: 1px solid #f9f9f9;
+}
+
+.on {
+  display: none;
+}
+
+.letter, .symbol {
+  flex: 1;
+}
+
+.capslock, .return {
+  flex: 2;
+}
+
+.tab, .delete {
+  flex: 1.75;
+}
+
+.left-shift, .right-shift {
+  flex: 2.25;
+}
+
+.space {
+  width: 100%;
+  margin: 10px;
+}
