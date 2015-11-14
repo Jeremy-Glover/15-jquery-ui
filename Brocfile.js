@@ -1,9 +1,13 @@
 var Merge = require('broccoli-merge-trees');
+var Sass = require('broccoli-sass');
 var Funnel = require('broccoli-funnel');
+var Babel = require('broccoli-babel-transpiler');
+var Concat = require('broccoli-concat');
 
 var jquery = new Funnel('bower_components/jquery/dist', {
-  files: ['jquery.js'],
+    files: ['jquery.js'],
 });
+
 var stylePaths = [
     'sass',
     'bower_components/normalize-css',
@@ -12,8 +16,21 @@ var stylePaths = [
     'bower_components/neat/app/assets/stylesheets',
   ];
 
-var Sass = require('broccoli-sass');
-
 var styles = new Sass(stylePaths, 'app.scss', 'app.css');
 
-module.exports = new Merge(['public', styles, jquery], { overwrite: true });
+var scripts = Babel('src', {
+    browserPolyfill: true,
+    stage: 0,
+    moduleIds: true,
+    modules: 'amd',
+  });
+
+scripts = Concat(scripts, {
+    inputFiles: [
+      '**/*.js',
+    ],
+    outputFile: '/app.js',
+  });
+
+
+module.exports = new Merge(['public', styles, jquery, scripts, 'bower_components/font-awesome/fonts'], { overwrite: true });

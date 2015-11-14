@@ -10,73 +10,82 @@
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
-  <div class="input-area">
-  </div>
-  <div class="keys">
-    <ul class="keys-row">
-      <li class="keys-btn">`</li>
-      <li class="keys-btn">1</li>
-      <li class="keys-btn">2</li>
-      <li class="keys-btn">3</li>
-      <li class="keys-btn">4</li>
-      <li class="keys-btn">5</li>
-      <li class="keys-btn">6</li>
-      <li class="keys-btn">7</li>
-      <li class="keys-btn">8</li>
-      <li class="keys-btn">9</li>
-      <li class="keys-btn">0</li>
-      <li class="keys-btn">-</li>
-      <li class="keys-btn">=</li>
-      <li class="keys-btn__big">delete</li>
-    </ul>
-    <ul class="keys-row">
-      <li class="keys-btn__big">tab</li>
-      <li class="keys-btn">q</li>
-      <li class="keys-btn">w</li>
-      <li class="keys-btn">e</li>
-      <li class="keys-btn">r</li>
-      <li class="keys-btn">t</li>
-      <li class="keys-btn">y</li>
-      <li class="keys-btn">u</li>
-      <li class="keys-btn">i</li>
-      <li class="keys-btn">o</li>
-      <li class="keys-btn">p</li>
-      <li class="keys-btn">[</li>
-      <li class="keys-btn">]</li>
-      <li class="keys-btn">\</li>
-    </ul>
-    <ul class="keys-row">
-      <li class="keys-btn__big">caps lock</li>
-      <li class="keys-btn">a</li>
-      <li class="keys-btn">s</li>
-      <li class="keys-btn">d</li>
-      <li class="keys-btn">f</li>
-      <li class="keys-btn">g</li>
-      <li class="keys-btn">h</li>
-      <li class="keys-btn">j</li>
-      <li class="keys-btn">k</li>
-      <li class="keys-btn">l</li>
-      <li class="keys-btn">;</li>
-      <li class="keys-btn">'</li>
-      <li class="keys-btn__big">return</li>
-     </ul>
-     <ul class="keys-row">
-      <li class="keys-btn__big">shift</li>
-      <li class="keys-btn">z</li>
-      <li class="keys-btn">x</li>
-      <li class="keys-btn">c</li>
-      <li class="keys-btn">v</li>
-      <li class="keys-btn">b</li>
-      <li class="keys-btn">n</li>
-      <li class="keys-btn">m</li>
-      <li class="keys-btn">,</li>
-      <li class="keys-btn">.</li>
-      <li class="keys-btn">/</li>
-      <li class="keys-btn__big">shift</li>
-     </ul>
-     <ul class="key-row">
-       <li class="keys-btn__space">space</li>
-     </ul>
-   </div>
+  <div class="container">
+    <div class="input">
+      <textarea name="" id="" cols="6" rows="60"></textarea>
+    </div>
+      <ul class="keys">
+        <li class="keys-btn">`</li
+        <li class="keys-btn">1</li>
+        <li class="keys-btn">2</li>
+        <li class="keys-btn">3</li>
+        <li class="keys-btn">4</li>
+        <li class="keys-btn">5</li>
+        <li class="keys-btn">6</li>
+        <li class="keys-btn">7</li>
+        <li class="keys-btn">8</li>
+        <li class="keys-btn">9</li>
+        <li class="keys-btn">0</li>
+        <li class="keys-btn">-</li>
+        <li class="keys-btn">=</li>
+        <li class="keys-btn__big">delete</li>
+      </ul>
+      <ul class="keys-row">
+        <li class="keys-btn__big">tab</li>
+        <li class="keys-btn">q</li>
+        <li class="keys-btn">w</li>
+        <li class="keys-btn">e</li>
+        <li class="keys-btn">r</li>
+        <li class="keys-btn">t</li>
+        <li class="keys-btn">y</li>
+        <li class="keys-btn">u</li>
+        <li class="keys-btn">i</li>
+        <li class="keys-btn">o</li>
+        <li class="keys-btn">p</li>
+        <li class="keys-btn">[</li>
+        <li class="keys-btn">]</li>
+        <li class="keys-btn">\</li>
+      </ul>
+      <ul class="keys-row">
+        <li class="keys-btn__big">caps lock</li>
+        <li class="keys-btn">a</li>
+        <li class="keys-btn">s</li>
+        <li class="keys-btn">d</li>
+        <li class="keys-btn">f</li>
+        <li class="keys-btn">g</li>
+        <li class="keys-btn">h</li>
+        <li class="keys-btn">j</li>
+        <li class="keys-btn">k</li>
+        <li class="keys-btn">l</li>
+        <li class="keys-btn">;</li>
+        <li class="keys-btn">'</li>
+        <li class="keys-btn__big">return</li>
+       </ul>
+       <ul class="keys-row">
+        <li class="keys-btn__big">shift</li>
+        <li class="keys-btn">z</li>
+        <li class="keys-btn">x</li>
+        <li class="keys-btn">c</li>
+        <li class="keys-btn">v</li>
+        <li class="keys-btn">b</li>
+        <li class="keys-btn">n</li>
+        <li class="keys-btn">m</li>
+        <li class="keys-btn">,</li>
+        <li class="keys-btn">.</li>
+        <li class="keys-btn">/</li>
+        <li class="keys-btn__big">shift</li>
+       </ul>
+       <ul class="key-row">
+         <li class="keys-btn__space">space</li>
+       </ul>
+     </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.js"></script>
+   <script src="/jquery.js"></script>
+   <script src="app.js"></script>
+   <script>
+     require(['keyboard'], function(keyboard) {
+       keyboard();
+     });
+   </script>
  </body>
 </html>

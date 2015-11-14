@@ -21,10 +21,6 @@ html {
   color: $text_white;
 }
 
-.accordion__drop-down {
-  display: flex;
-}
-
 .accordion__item {
   display: flex;
   margin: 0;
@@ -47,6 +43,7 @@ html {
 }
 
 .accordion__list {
+  display: none;
   background: $text_white;
   color: $text_gray;
   padding-left: 0;
