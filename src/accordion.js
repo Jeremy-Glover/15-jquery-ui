@@ -3,12 +3,7 @@ export default function() {
   var list = $(`.accordion__list`);
 
   bar.click(function() {
-    $(this).next(list).slideToggle();
+    $(this).siblings(list).slideToggle();
+    list.not($(this)).slideUp();
   });
 }
-
-bar.click(function() {
-  list.slideUp();
-  $(this).next(list).slideToggle;
-  return false;
-});
