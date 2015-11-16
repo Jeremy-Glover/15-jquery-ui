@@ -22,7 +22,7 @@ export default function() {
 
     if ($(this).hasClass(`delete`)) {
       var html = enter.html();
-      enter.html(html.substr(0, html.lenth - 1));
+      enter.html(html.substr(0, html.length - 1));
       return false;
     }
 
